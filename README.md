@@ -21,6 +21,8 @@ Use of distance Jaccards (set1 union set2)
 Cluster 0 = cluster poubelle
 
 ## Results
+HIGH : worst pronostic
+
 ### Total pathways
 ![image]()
 ### Selection of independent channels
