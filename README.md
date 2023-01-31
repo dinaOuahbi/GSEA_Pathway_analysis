@@ -22,15 +22,16 @@ Cluster 0 = cluster poubelle
 
 ## Results
 HIGH : worst pronostic
-
+![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/KM_high_low.png)
 ### Total pathways
-![image]()
+![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/total_paths.png)
 ### Selection of independent channels
-![image]()
+![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/select_indep_channels.png)
 ### Clustering similar gene sets - Evaluation
-![image]()
+![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/down_reg_paths.png)
+![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/up_reg_paths.png)
 
 
 
 
-![Image of aciduino on protoboard]()
+#### OUAHBI DINA
