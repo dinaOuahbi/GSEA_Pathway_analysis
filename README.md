@@ -2,16 +2,33 @@
 
 ## Methods
 
-Les données à l’issue de l’analyse RNA seq sur les trois modèles d’intéret 
+## Parameters
+The data from the RNA seq analysis on the three models of interest 
     Res_allgenes_highvslow_model8_Deseq2_RSEM.csv
+    
+    
+The genes are classified according to their CFL. We then get a list of genes with each a CFL value associated.
+Genes sets Hallmark (species 'hs' category 'H') composed of 50 pathways recognized in homo sapiens. 
+Fgsea : a cluster will have a minimum of 15 genes and a maximum of 500 genes.
 
-Les gènes sont classés suivant leurs LFC. On récupère alors une liste de gènes avec chacun une valeur de LFC associer
+## Collapse list of enriched pathways to independent ones
+This is a method that reduces similar paths and therefore returns a list of enriched main paths 
 
-Genes sets Hallmark (éspece ‘hs’ categorie ‘H’) composé de 50 voies reconnues chez l’homo sapiens. 
+## Clustering similar gene sets
+Sometimes, even after grouping gene sets, there may still be a fairly large number of pathways to decipher. To facilitate the interpretation of a large number of biological pathways, we can group similar gene sets together (based on the overlap of the genes they contain). This will allow us to see if many sets of genes related to the same function are similarly affected and provide a more comprehensive view of pathway deregulation.
 
-Fgsea : un cluster aura au minimum 15 gènes et au maximum 500 gènes
+Use of distance Jaccards (set1 union set2)
+Cluster 0 = cluster poubelle
 
-##Collapse list of enriched pathways to independent ones![image](https://user-images.githubusercontent.com/88771061/215774561-6271d72e-98c1-4c03-8568-4ea7eb8ebc93.png)
+## Results
+### Total pathways
+![image]()
+### Selection of independent channels
+![image]()
+### Clustering similar gene sets - Evaluation
+![image]()
+
+
 
 
 ![Image of aciduino on protoboard]()
