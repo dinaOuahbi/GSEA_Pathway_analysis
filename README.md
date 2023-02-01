@@ -31,7 +31,4 @@ HIGH : worst pronostic
 ![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/down_reg_paths.png)
 ![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/up_reg_paths.png)
 
-
-
-
-####### Thanks for following (OD)
+###### Thanks for following (OD)
