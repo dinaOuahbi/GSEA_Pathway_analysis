@@ -1,34 +1,41 @@
-# GSEA_Pathway_analysis
+# **GSEA_Pathway_Analysis**  
+**Gene Set Enrichment Analysis (GSEA) of Pathways in High vs. Low Prognosis Models**  
 
-## Methods
+## **Methods**  
 
-#### Parameters
-The data from the RNA seq analysis on the three models of interest 
-    Res_allgenes_highvslow_model8_Deseq2_RSEM.csv
-    
-    
-The genes are classified according to their CFL. We then get a list of genes with each a CFL value associated.
-Genes sets Hallmark (species 'hs' category 'H') composed of 50 pathways recognized in homo sapiens. 
-Fgsea : a cluster will have a minimum of 15 genes and a maximum of 500 genes.
+### **Parameters**  
 
-#### Collapse list of enriched pathways to independent ones
-This is a method that reduces similar paths and therefore returns a list of enriched main paths 
+- **Data File**: RNA-seq data for the three models of interest:  
+  - `Res_allgenes_highvslow_model8_Deseq2_RSEM.csv`  
 
-#### Clustering similar gene sets
-Sometimes, even after grouping gene sets, there may still be a fairly large number of pathways to decipher. To facilitate the interpretation of a large number of biological pathways, we can group similar gene sets together (based on the overlap of the genes they contain). This will allow us to see if many sets of genes related to the same function are similarly affected and provide a more comprehensive view of pathway deregulation.
+- **Gene Classification**: Genes are classified based on their **CFL** value. A list of genes is generated, each associated with a CFL score.  
+- **Gene Sets**: The **Hallmark gene sets** for Homo sapiens (species 'hs', category 'H') consist of **50 pathways**.  
+- **Fgsea**: A cluster is composed of a minimum of 15 genes and a maximum of 500 genes.
 
-Use of distance Jaccards (set1 union set2)
-Cluster 0 = cluster poubelle
+### **Methods Overview**  
 
-## Results
-HIGH : worst pronostic
-![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/KM_high_low.png)
-#### Total pathways
-![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/total_paths.png)
-#### Selection of independent channels
-![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/select_indep_channels.png)
-#### Clustering similar gene sets - Evaluation
-![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/down_reg_paths.png)
-![image](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/up_reg_paths.png)
+- **Collapse List of Enriched Pathways**: This step reduces similar pathways, returning a list of independent enriched pathways.  
+- **Clustering Similar Gene Sets**: To interpret a large number of biological pathways, we group similar gene sets based on gene overlap. This approach reveals if gene sets related to the same function are similarly affected, providing a clearer understanding of pathway deregulation.  
+  - **Distance Measure**: Jaccard distance is used to measure overlap between gene sets (Set1 ∪ Set2).  
+  - **Cluster 0**: Represents a "trash" cluster that is discarded.
 
-###### Thanks for following (OD)
+---
+
+## **Results**  
+
+### **Prognosis Groups**  
+- **HIGH**: Worst prognosis  
+![Kaplan-Meier Plot](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/KM_high_low.png)
+
+### **Total Pathways**  
+![Total Pathways](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/total_paths.png)
+
+### **Selection of Independent Pathways**  
+![Selection of Independent Pathways](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/select_indep_channels.png)
+
+### **Clustering of Similar Gene Sets**  
+- **Downregulated Pathways**  
+![Downregulated Pathways](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/down_reg_paths.png)
+
+- **Upregulated Pathways**  
+![Upregulated Pathways](https://github.com/dinaOuahbi/GSEA_Pathway_analysis/blob/main/up_reg_paths.png)
